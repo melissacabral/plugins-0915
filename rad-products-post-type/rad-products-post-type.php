@@ -27,4 +27,17 @@ function rad_post_type(){
 			'edit_item'			=> 'Edit Product',
 		),
 	) );
+	//add 'brands' to 'products'
+	register_taxonomy( 'brand', 'product', array(
+		'hierarchical'	=> true,   //can have parent/child brands. checkbox interface
+		'show_admin_column'	=> true,
+		'label'			=> 'Brands',
+		'labels'		=> array(
+			'add_new_item'		=> 'Add New Brand',
+			'search_items'		=> 'Search Brands',
+			'not_found'			=> 'No Brands Found',
+		),
+	) );
 }
+
+//no close PHP
