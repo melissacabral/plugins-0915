@@ -1,0 +1,31 @@
+#rad-hello-bar{
+	background-color: #32D0AD;
+	color:white;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding:.5em;
+	text-align: center;
+}
+#rad-hello-bar span{
+	max-width: 1000px;
+	margin: 0 auto;
+	display: block;
+}
+#rad-hello-bar a{
+	background-color: #484747;
+	color: white;
+	border-radius: .5em;
+	padding:.25em .5em;
+}
+#rad-hello-bar a:hover{
+	background-color: #E84B69;
+}
+body{
+	margin-top:45px;
+}
+/* push the bar down a little if the admin bar is showing */
+.admin-bar #rad-hello-bar{
+	top:32px;
+}
